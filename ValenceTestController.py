@@ -9,6 +9,19 @@ import logging
 from datetime import datetime
 
 
+"""
+##############################################################################################
+Description
+    synchronize events between devices over serial connections to run in parallel
+Objects:
+    Clock: keeps track of time in event loop
+    Randomizer: generates a shuffed list of signals where each signal is repeated a set amount of times
+    MyLogger: custom implementation of logging module, writing logs to console and file
+    Controller: creates and sends signals to device over serial connection
+    Composer: synchronizes sending of signals over controllers at specific times in the event loop
+
+##############################################################################################
+"""
 def get_current_datetime():
     return time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
 
