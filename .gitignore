@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But not these files...
+!*.py
+!.gitignore
+!requirements.txt
+!*.ino
